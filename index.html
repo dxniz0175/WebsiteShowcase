@@ -727,35 +727,40 @@
         </div>
     </section>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title reveal">Get In <span>Touch</span></h2>
-            <div class="contact-wrapper reveal">
-                <form id="contactForm">
-                    <div class="input-group">
-                        <input type="text" id="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="input-group">
-                        <input type="email" id="email" placeholder="Email Address" required>
-                    </div>
-                    <div class="input-group">
-                        <textarea id="message" placeholder="Tell me about your project..."></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary" style="width: 100%;">Send Message <i class="fas fa-paper-plane"></i></button>
-                </form>
-                
-                <div class="discord-card">
-                    <i class="fab fa-discord"></i>
-                    <div class="username">goresontop01</div>
-                    <p style="font-size: 0.9rem; color: #aaa;">Add me on Discord to discuss your project!</p>
+  <section id="contact" class="section">
+    <div class="container">
+        <h2 class="section-title reveal">Get In <span>Touch</span></h2>
+        <div class="contact-wrapper reveal">
+            <form action="https://formspree.io/f/https://formspree.io/f/mbdpyeeq method="POST">
+                <div class="input-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <textarea name="message" placeholder="Tell me about your project..." required></textarea>
                 </div>
                 
-                <div style="text-align: center; margin-top: 20px;">
-                    <p><i class="fab fa-roblox"></i> Roblox: <strong style="color: #ff4d2e;">chaosknight1</strong></p>
-                </div>
+                <!-- Extra hidden fields voor betere e-mails -->
+                <input type="hidden" name="_subject" value="New message from portfolio!">
+                <input type="hidden" name="_replyto" value="email">
+                
+                <button type="submit" class="btn-primary" style="width: 100%;">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+            
+            <div class="discord-card">
+                <i class="fab fa-discord"></i>
+                <div class="username">goresontop01</div>
+                <p style="font-size: 0.9rem; color: #aaa;">Or add me on Discord!</p>
+            </div>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <p><i class="fab fa-roblox"></i> Roblox: <strong style="color: #ff4d2e;">chaosknight1</strong></p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 </main>
 
 <footer class="container">
